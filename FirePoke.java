@@ -16,15 +16,16 @@ public class FirePoke extends Pokemon {
 
     @Override
     public void eats(String food) {
-
+        System.out.println(getName() + " eats: " + getFood());
     }
 
     @Override
     public void speaks(String sound) {
-
+        System.out.println(getName() + " says: " + getSound());
     }
 
     //GETTERS EN SETTERS //////////////
+
 
     public String getHeat() {
         return heat;
