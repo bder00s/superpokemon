@@ -9,6 +9,7 @@ public class Main {
         charmander.speaks(charmander.getSound());
         charmander.eats(charmander.getFood());
 
+        charmander.getCompleteFirePokemon();
 
 
     }

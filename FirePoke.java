@@ -1,11 +1,12 @@
 public class FirePoke extends Pokemon {
 
     //VARIABELEN /////////////////////////
-    String heat;
+   private String heat;
+
 
 
     //CONSTRUCTOR
-    public FirePoke(String name, int height, int weight, int hp, String sound, String food, String heat) {
+    FirePoke(String name, int height, int weight, int hp, String sound, String food, String heat) {
         super(name, height, weight, hp, sound, food);
         this.heat = heat;
 
@@ -23,6 +24,20 @@ public class FirePoke extends Pokemon {
     public void speaks(String sound) {
         System.out.println(getName() + " says: " + getSound());
     }
+
+
+    public void getCompleteFirePokemon() {
+        System.out.println(" Name: " + getName()
+                + " | Height: " + getHeight()
+                + " | Weight: " + getWeight()
+                + " | HP: " + getHp()
+                + " | Sound: " + getSound()
+                + " | Food: " + getFood()
+                + " | Heat of fire: " + getHeat()
+        );
+    }
+
+
 
     //GETTERS EN SETTERS //////////////
 

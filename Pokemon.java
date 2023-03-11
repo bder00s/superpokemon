@@ -52,6 +52,7 @@ public abstract class Pokemon {
     public abstract void speaks(String sound);
 
 
+
 }
 
 
