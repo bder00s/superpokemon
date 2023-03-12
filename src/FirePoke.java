@@ -1,13 +1,16 @@
+package src;
+
 public class FirePoke extends Pokemon {
 
     //VARIABELEN /////////////////////////
-   private String heat;
-
+    private String heat;
+    private String heatDamage;
 
 
     //CONSTRUCTOR
-    FirePoke(String name, int height, int weight, int hp, String sound, String food, String heat) {
+    FirePoke(String name, int height, int weight, int hp, String sound, String food, String heat, String heatDamage) {
         super(name, height, weight, hp, sound, food);
+        this.heatDamage = heatDamage;
         this.heat = heat;
 
 
@@ -17,11 +20,13 @@ public class FirePoke extends Pokemon {
 
     @Override
     public void eats(String food) {
+
         System.out.println(getName() + " eats: " + getFood());
     }
 
     @Override
     public void speaks(String sound) {
+
         System.out.println(getName() + " says: " + getSound());
     }
 
@@ -37,6 +42,7 @@ public class FirePoke extends Pokemon {
         );
     }
 
+    public void
 
 
     //GETTERS EN SETTERS //////////////
@@ -48,6 +54,14 @@ public class FirePoke extends Pokemon {
 
     public void setHeat(String heat) {
         this.heat = heat;
+    }
+
+    public String getHeatDamage(){
+        return heatDamage;
+    }
+
+    public void setHeatDamage(String heatDamage){
+        this.heatDamage = heatDamage;
     }
 
 }

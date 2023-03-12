@@ -1,6 +1,8 @@
+package src;
+
 public abstract class Pokemon {
 
-    //VARIABELEN
+    //VARIABELEN ////////////////////////////
     String name;
     int height;
     int weight;
@@ -18,14 +20,20 @@ public abstract class Pokemon {
         this.food = food;
     }
 
-    //GETTERS //////////////////////////
+    //GETTERS en SETTERS //////////////////////////
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
     public int getHeight() {
         return height;
     }
+
 
     public int getWeight() {
         return weight;
@@ -39,8 +47,12 @@ public abstract class Pokemon {
         return sound;
     }
 
+
     public String getFood() {
         return food;
+    }
+    public void setFood(String food) {
+        this.food = food;
     }
 
 
