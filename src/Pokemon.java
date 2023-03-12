@@ -3,6 +3,7 @@ package src;
 public abstract class Pokemon {
 
     //VARIABELEN ////////////////////////////
+    String type;
     String name;
     int height;
     int weight;
@@ -12,7 +13,8 @@ public abstract class Pokemon {
     String food;
 
     //CONSTRUCTOR ////////////////////////////////
-    public Pokemon(String name, int height, int weight, int damage, String sound, String food) {
+    public Pokemon(String type,String name, int height, int weight, int damage, String sound, String food) {
+        this.type = type;
         this.name = name;
         this.height = height;
         this.weight = weight;
@@ -22,6 +24,12 @@ public abstract class Pokemon {
     }
 
     //GETTERS en SETTERS //////////////////////////
+
+    public String getType(){
+        return type;
+    }
+
+
     public String getName() {
         return name;
     }
@@ -68,6 +76,8 @@ public abstract class Pokemon {
     public void scratches() {
         System.out.println(getName() + " scratches Opponent and does " + getDamage() + " damage");
     }
+
+
 
 
 

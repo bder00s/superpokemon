@@ -8,8 +8,8 @@ public class FirePoke extends Pokemon {
 
 
     //CONSTRUCTOR
-    FirePoke(String name, int height, int weight, int damage, String sound, String food, String heat, String heatDamage) {
-        super(name, height, weight, damage, sound, food);
+    FirePoke(String type, String name, int height, int weight, int damage, String sound, String food, String heat, String heatDamage) {
+        super(type,name, height, weight, damage, sound, food);
 
         this.heatDamage = heatDamage;
         this.heat = heat;
@@ -33,7 +33,8 @@ public class FirePoke extends Pokemon {
 
 
     public void getCompleteFirePokemon() {
-        System.out.println(" Name: " + getName()
+        System.out.println("Type: " + getType()
+                + " | Name: " + getName()
                 + " | Height: " + getHeight()
                 + " | Weight: " + getWeight()
                 + " | Damage: " + getDamage()

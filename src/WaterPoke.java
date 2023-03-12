@@ -8,8 +8,8 @@ public class WaterPoke extends Pokemon {
 
     //CONSTRUCTOR ////////////////
 
-    public WaterPoke(String name, int height, int weight, int damage, String sound, String food, int waterDamage, String waterType) {
-        super(name, height, weight, damage, sound, food);
+    public WaterPoke(String type,String name, int height, int weight, int damage, String sound, String food, int waterDamage, String waterType) {
+        super(type, name, height, weight, damage, sound, food);
 
         this.waterDamage = waterDamage;
         this.waterType = waterType;
@@ -31,7 +31,8 @@ public class WaterPoke extends Pokemon {
 
 
 public void getCompleteWaterPokemon(){
-    System.out.println(" Name: " + getName()
+    System.out.println("Type: " + getType()
+            + " | Name: " + getName()
             + " | Height: " + getHeight()
             + " | Weight: " + getWeight()
             + " | Damage: " + getDamage()
