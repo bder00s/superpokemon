@@ -8,8 +8,9 @@ public class FirePoke extends Pokemon {
 
 
     //CONSTRUCTOR
-    FirePoke(String name, int height, int weight, int hp, String sound, String food, String heat, String heatDamage) {
-        super(name, height, weight, hp, sound, food);
+    FirePoke(String name, int height, int weight, int damage, String sound, String food, String heat, String heatDamage) {
+        super(name, height, weight, damage, sound, food);
+
         this.heatDamage = heatDamage;
         this.heat = heat;
 
@@ -35,14 +36,20 @@ public class FirePoke extends Pokemon {
         System.out.println(" Name: " + getName()
                 + " | Height: " + getHeight()
                 + " | Weight: " + getWeight()
-                + " | HP: " + getHp()
+                + " | Damage: " + getDamage()
                 + " | Sound: " + getSound()
                 + " | Food: " + getFood()
                 + " | Heat of fire: " + getHeat()
         );
     }
 
-    public void
+    public void pyroBall(){
+        System.out.println(getName() + " used pyroball! o0o A hole is burned into opponent! The damage is: " + getHeatDamage());
+    }
+
+    public void inferno(){
+        System.out.println(getName() + " used inferno! ^^^^^^^ Opponent goes up in flames!");
+    }
 
 
     //GETTERS EN SETTERS //////////////

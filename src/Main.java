@@ -8,12 +8,24 @@ public class Main {
 
         charmander.getCompleteFirePokemon();
 
+        charmander.inferno();
+
         /////////////////////////////////////////
 
-        GrassPoke bulbasaur = new GrassPoke("Bulbasaur", 200, 400, 50, "saauuur", null, 50, 100);
+        GrassPoke bulbasaur = new GrassPoke("Bulbasaur", 100, 400, 50, "saauuur", null, 50, 100);
 
-        bulbasaur.getCompleteGrassPokemon();
 
+        bulbasaur.leafstorm();
+
+        bulbasaur.scratches();
+
+        /////////////////////////////////////////////
+
+        WaterPoke squirtle = new WaterPoke("Squirtle" ,150, 250, 50, "sqoorr" , "fish", 50, "sweet water" );
+
+        squirtle.getCompleteWaterPokemon();
+
+        squirtle.raindance();
 
     }
 }

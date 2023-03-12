@@ -6,16 +6,17 @@ public abstract class Pokemon {
     String name;
     int height;
     int weight;
-    int hp;
+
+    int damage;
     String sound;
     String food;
 
     //CONSTRUCTOR ////////////////////////////////
-    public Pokemon(String name, int height, int weight, int hp, String sound, String food) {
+    public Pokemon(String name, int height, int weight, int damage, String sound, String food) {
         this.name = name;
         this.height = height;
         this.weight = weight;
-        this.hp = hp;
+        this.damage = damage;
         this.sound = sound;
         this.food = food;
     }
@@ -39,8 +40,8 @@ public abstract class Pokemon {
         return weight;
     }
 
-    public int getHp() {
-        return hp;
+    public int getDamage() {
+        return damage;
     }
 
     public String getSound() {
@@ -51,6 +52,7 @@ public abstract class Pokemon {
     public String getFood() {
         return food;
     }
+
     public void setFood(String food) {
         this.food = food;
     }
@@ -62,6 +64,10 @@ public abstract class Pokemon {
 
 
     public abstract void speaks(String sound);
+
+    public void scratches() {
+        System.out.println(getName() + " scratches Opponent and does " + getDamage() + " damage");
+    }
 
 
 

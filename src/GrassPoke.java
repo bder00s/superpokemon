@@ -10,8 +10,8 @@ public class GrassPoke extends Pokemon {
     private int grassPoisonDamage;
 
 //CONSTRUCTOR ///////////////////////////
-    public GrassPoke(String name, int height, int weight, int hp, String sound, String food, int amountOfPoison, int grassPoisonDamage) {
-        super(name, height, weight, hp, sound, food);
+    public GrassPoke(String name, int height, int weight, int damage, String sound, String food, int amountOfPoison, int grassPoisonDamage) {
+        super(name, height, weight, damage, sound, food);
 
         this.amountOfPoison = amountOfPoison;
         this.grassPoisonDamage = grassPoisonDamage;
@@ -37,7 +37,7 @@ public class GrassPoke extends Pokemon {
         System.out.println(" Name: " + getName()
                 + " | Height: " + getHeight()
                 + " | Weight: " + getWeight()
-                + " | HP: " + getHp()
+                + " | Damage: " + getDamage()
                 + " | Sound: " + getSound()
                 + " | Food: Grass pokemon don't eat food - they use photosynthesis"
                 + " | Amount of poison: " + getAmountOfPoison()
