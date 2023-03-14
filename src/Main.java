@@ -21,6 +21,7 @@ public class Main {
 
         bulbasaur.scratches();
 
+
         /////////////////////////////////////////////
 
         WaterPoke squirtle = new WaterPoke("water","Squirtle" ,150, 250, 50, "sqoorr" , "fish", 50, "sweet water" );
@@ -37,6 +38,7 @@ public class Main {
         pikachu.getCompleteElectricPokemon();
 
         pikachu.thunder();
+
 
     }
 }

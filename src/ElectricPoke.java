@@ -49,6 +49,7 @@ public class ElectricPoke extends Pokemon {
     public void electroBall() {
         System.out.println(getName() + " throws an electroball at its opponent and does " + getDamage() + " damage.");
     }
+
     //GETTERS EN SETTERS /////////////////////
 
     public int getAmountOfVolt() {
