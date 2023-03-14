@@ -77,9 +77,9 @@ public abstract class Pokemon {
         System.out.println(getName() + " scratches Opponent and does " + getDamage() + " damage");
     }
 
-
-
-
+public void getPokemonType(){
+    System.out.println(getName() + " is a " + getType() + " pokemon");
+}
 
 }
 

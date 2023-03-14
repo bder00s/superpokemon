@@ -3,16 +3,17 @@ package src;
 public class ElectricPoke extends Pokemon {
 
     // VARIABELEN /////////////////////////
-private int amountOfVolt;
-
+    private int amountOfVolt;
+    private String voltRadius;
 
 
 // CONSTRUCTOR /////////////////////
 
-    public ElectricPoke(String type, String name, int height, int weight, int damage, String sound, String food, int amountOfVolt) {
+    public ElectricPoke(String type, String name, int height, int weight, int damage, String sound, String food, int amountOfVolt, String voltRadius) {
         super(type, name, height, weight, damage, sound, food);
 
         this.amountOfVolt = amountOfVolt;
+        this.voltRadius = voltRadius;
     }
 
     //METHODS ///////////////////////////////
@@ -28,7 +29,7 @@ private int amountOfVolt;
         System.out.println(getName() + " says: " + getSound());
     }
 
-    public void getCompleteElectricPokemon(){
+    public void getCompleteElectricPokemon() {
         System.out.println("Type:  " + getType()
                 + " | Name: " + getName()
                 + " | Height: " + getHeight()
@@ -37,17 +38,39 @@ private int amountOfVolt;
                 + " | Sound: " + getSound()
                 + " | Food: " + getFood()
                 + " | Amount of volt: " + getAmountOfVolt()
+                + " | Volt radius: " + getVoltRadius()
         );
     }
 
+    public void thunder() {
+        System.out.println(getName() + " uses thunder and electrocutes its opponent with " + getAmountOfVolt() + " volt.");
+    }
 
+    public void electroBall() {
+        System.out.println(getName() + " throws an electroball at its opponent and does " + getDamage() + " damage.");
+    }
     //GETTERS EN SETTERS /////////////////////
 
-    public int getAmountOfVolt(){
+    public int getAmountOfVolt() {
         return amountOfVolt;
     }
 
-    public void setAmountOfVolt(int amountOfVolt){
+    public void setAmountOfVolt(int amountOfVolt) {
         this.amountOfVolt = amountOfVolt;
     }
+
+
+    public String getVoltRadius(){
+        return voltRadius;
+    }
+
+    public void setVoltRadius(String voltRadius){
+        this.voltRadius = voltRadius;
+    }
+
+
+
+
 }
+
+
